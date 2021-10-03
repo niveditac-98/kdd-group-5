@@ -1,4 +1,4 @@
-# Impact of COvid-19 on stock market
+# Impact of Covid-19 on stock market
 ## Team Members
 
 Sayali Ambulkar
