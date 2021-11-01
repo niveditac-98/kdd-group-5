@@ -25,10 +25,14 @@ Analysis of the impact of COVID-19 on two of the world’s biggest Stock Markets
 
 5.We join this version of the covid_19_data dataset with one of the Stock Market datasets (A.csv, which is the data for Agilent Technologies).
 
-6.We remove the blank rows post-joining.
+6.We removed the blank rows post-joining.
 
-7.We remove the unnecessary columns.
+7.We removed the unnecessary columns.
 
 8.Now, we have a dataset containing the data for confirmed cases, deaths, recovered cases due to COVID-19, mapped with dates, for which we have the stock value information for Agilent Technologies, which is one of the companies from the S&P 500 Health Care Sector.
 
-9.We have exported this dataset from DataRobot and imported it below.
+9.We have exported this dataset from DataRobot and imported it.
+
+10.We have used the data from one company from the S&P 500 Health Care Sector. We are planning to include data from the companies that make up various sector indices in the future.
+
+11.In the analysis, we will then add graphs to show sector-wise comparison of the impact of COVID-19.
