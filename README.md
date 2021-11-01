@@ -12,6 +12,7 @@ Nivedita Chinnakannu
 Analysis of the impact of COVID-19 on two of the world’s biggest Stock Markets (NASDAQ, NYSE, S&P 500, etc) and post-pandemic prediction of the same.
 
 1.From https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset, we downloaded the covid_19_data.csv file.
+
 2.From https://www.kaggle.com/paultimothymooney/stock-market-data, from sp500 --> csv, we downloaded five datasets that were included in the S&P 500 Health Care Index (reference: https://www.barchart.com/stocks/indices/sp-sector/health-care)
 
 3.Using DataRobot Paxata, we performed the following steps:
