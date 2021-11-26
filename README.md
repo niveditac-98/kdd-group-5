@@ -38,6 +38,9 @@ Sector-wise analysis of the impact of COVID-19 on one of the world’s biggest S
 
 11. In further analysis, graphs to show sector-wise comparison of the impact of COVID-19 will be added.
 
+This project includes the prediction of stock values based on certain data. The model has to be trained on labeled data in order to make a labeled prediction.
+For analysis in this project, labeled data is necessary in order to understand and interpret the results of the analysis. For example, in the year 2021, an increase in the number of vaccinations per day resulted in an increase in the day’s high for the stock value of Agilent Technologies. This analysis would have been difficult if the data was unlabeled.
+
 # Updated Notebook
-## Group5_Project_intial_copy.ipynb
+## Group5_Project_Initial_Copy.ipynb
 ## updated dataset : https://drive.google.com/file/d/1-TtN2fRqFhXLtuS_gCFe7rqkl5jgMFF-/view?usp=sharing
