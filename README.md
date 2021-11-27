@@ -36,6 +36,14 @@ Sector-wise analysis of the impact of COVID-19 on one of the world’s biggest S
 
 10. Exploratory data analysis was performed on this data.
 
+<img width="394" alt="abbvie inc" src="https://user-images.githubusercontent.com/91848959/143666994-9fdd5b03-b3a5-472c-854b-f0b3b6a49b16.PNG">
+<img width="415" alt="abiomed" src="https://user-images.githubusercontent.com/91848959/143666995-0df96533-d17c-4562-a6af-261e58371216.PNG">
+<img width="334" alt="Abott labs" src="https://user-images.githubusercontent.com/91848959/143666996-fe151a85-7ac4-42bd-9f6e-3787544e30b3.PNG">
+<img width="400" alt="Agilent tech" src="https://user-images.githubusercontent.com/91848959/143666997-bc0d72d9-d981-4238-b2e3-b440f2165092.PNG">
+<img width="413" alt="amisourcebergen corp" src="https://user-images.githubusercontent.com/91848959/143666998-3911e726-66c0-445a-a272-db099afa9972.PNG">
+<img width="813" alt="Covid" src="https://user-images.githubusercontent.com/91848959/143667000-d3aed740-5f31-4f1c-bff9-6a08a0452ae3.PNG">
+
+
 11. In further analysis, graphs to show sector-wise comparison of the impact of COVID-19 will be added.
 
 This project includes the prediction of stock values based on certain data. The model has to be trained on labeled data in order to make a labeled prediction.
