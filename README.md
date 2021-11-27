@@ -50,5 +50,5 @@ This project includes the prediction of stock values based on certain data. The 
 For analysis in this project, labeled data is necessary in order to understand and interpret the results of the analysis. For example, in the year 2021, an increase in the number of vaccinations per day resulted in an increase in the day’s high for the stock value of Agilent Technologies. This analysis would have been difficult if the data was unlabeled.
 
 # Updated Notebook
-## Group5_Project_Initial_Copy.ipynb
+## Group5_Project.ipynb
 ## updated dataset : https://drive.google.com/file/d/1-TtN2fRqFhXLtuS_gCFe7rqkl5jgMFF-/view?usp=sharing
