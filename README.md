@@ -1,4 +1,4 @@
-# Impact of COVID-19 on the Stock Market
+# Analysis of the impact of COVID-19 on the Stock Market across different sectors and post-pandemic prediction of the same.
 ## Team Members
 
 Sayali Ambulkar
@@ -8,47 +8,43 @@ Meghana Palaparthi
 Ishani Naik
 
 Nivedita Chinnakannu
+
 ## Introduction
 Sector-wise analysis of the impact of COVID-19 on one of the world’s biggest Stock Markets (S&P 500) and post-pandemic prediction of the same.
+Sectors considered: Healthcare, IT, Industrials.
 
-1. From https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset, the covid_19_data.csv file was downloaded.
+## Data Sources
+We used the data available at the following links:
 
-2. From https://www.kaggle.com/paultimothymooney/stock-market-data, from sp500 --> csv, five datasets that were included in the S&P 500 Health Care Index (reference: https://www.barchart.com/stocks/indices/sp-sector/health-care) were downloaded.
+https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
+https://www.kaggle.com/paultimothymooney/stock-market-data
+https://www.kaggle.com/gpreda/covid-19-vaccination-progress/data
 
-3. Using DataRobot Paxata, the following steps were performed:
+# Domain understanding
+We deemed it would be of great use to individuals and businesses to know how variations in confirmed cases and deaths due to COVID-19 affected stock prices in different business sectors. In our project, we are trying to predict the stock prices of companies in three different sectors namely health care, IT and industrials based on COVID-19 cases.
 
-* Imported all the downloaded datasets.
-* In covid_19_data.csv, removed unnecessary rows - the rows with any country other than the US were removed.
-* Removed 4 unnecessary columns.
-* Aggregated the values in the rows by merging rows with the same date.
+# EDA
+Our main purpose is to highlight the impact of rising COVID-19 cases and the introduction and progress of vaccinations on the stock prices of the companies within these sectors. One example (healthcare sector) is shown below.
 
-4. This data was now ready to be merged with the Stock Market datasets.
+# Data Preparation
+We performed data cleaning by dropping duplicate values, dropping rows with null values, dropping unnecessary/irrelevant columns, changing the column datatypes, changing date formats. This was done using a combination of DataRobot Paxata and Python. We then merged the covid dataset with the 5 companies of the sector under consideration, on the date column. This step was repeated for all three sectors.
 
-5. This version of the covid_19_data dataset was merged with 5 of the Stock Market S&P 500 Health Care Index datasets (A.csv, ABBV.csv, ABC.csv, ABMD.csv, ABT.csv), merging on the date column.
+# Data Modeling
+We have used Multiple Linear Regression to perform prediction of Stock prices based on COVID-19. Multiple Linear Regression is a statistical technique that uses several explanatory variables to predict the outcome of a response variable. Here, we estimate the relationship between COVID-19 confirmed cases, deaths, recovered cases and the closing stock price of companies in each sector.
 
-6. The blank rows were removed.
+# Evaluation
+Our model generates a **MSE of 0.01 and Prediction Score of 0.99**
 
-7. The unnecessary columns were removed.
+# Conclusion
+Using DataRobot Paxata and Python we have merged the S&P 500 health care sector datasets, IT sector datasets, and industrials sector dataset along with the covid_19 dataset, joining on date.
+We have used linear regression as our prediction model and mean square error as our evaluation model. The basic idea of our evaluation model is to measure how bad/erroneous the model's predictions are when compared to actual observed values.
+Our prediction model has an accuracy of 0.99 and the mean square error is 0.01.
 
-8. Now, we have a dataset containing the data for confirmed cases, deaths, recovered cases due to COVID-19, mapped with dates, for which we have the stock value information for the 5 companies from the S&P 500 Health Care Sector.
+We had faced a problem with finding a model suitable to our prediction requirements. As per our understanding, algorithms like ARIMA, Facebook Prophet accepted only one attribute/feature, whereas we had five different features in our cleaned data.
+We then found and implemented the Multiple Linear Regression model.
 
-9. This dataset was exported from DataRobot and imported in the colaboratory notebook.
+# Future Scope
+With further calculations, we may also be able to predict the values of **sector indices** in the S&P 500 market. With a similar approach, we can predict the impact of COVID-19 on different sectors (other than healthcare, IT, and industries).
 
-10. Exploratory data analysis was performed on this data.
-
-<img width="394" alt="abbvie inc" src="https://user-images.githubusercontent.com/91848959/143666994-9fdd5b03-b3a5-472c-854b-f0b3b6a49b16.PNG">
-<img width="415" alt="abiomed" src="https://user-images.githubusercontent.com/91848959/143666995-0df96533-d17c-4562-a6af-261e58371216.PNG">
-<img width="334" alt="Abott labs" src="https://user-images.githubusercontent.com/91848959/143666996-fe151a85-7ac4-42bd-9f6e-3787544e30b3.PNG">
-<img width="400" alt="Agilent tech" src="https://user-images.githubusercontent.com/91848959/143666997-bc0d72d9-d981-4238-b2e3-b440f2165092.PNG">
-<img width="413" alt="amisourcebergen corp" src="https://user-images.githubusercontent.com/91848959/143666998-3911e726-66c0-445a-a272-db099afa9972.PNG">
-<img width="813" alt="Covid" src="https://user-images.githubusercontent.com/91848959/143667000-d3aed740-5f31-4f1c-bff9-6a08a0452ae3.PNG">
-
-
-11. In further analysis, graphs to show sector-wise comparison of the impact of COVID-19 will be added.
-
-This project includes the prediction of stock values based on certain data. The model has to be trained on labeled data in order to make a labeled prediction.
+Note: This project includes the prediction of stock values based on certain data. The model has to be trained on labeled data in order to make a labeled prediction.
 For analysis in this project, labeled data is necessary in order to understand and interpret the results of the analysis. For example, in the year 2021, an increase in the number of vaccinations per day resulted in an increase in the day’s high for the stock value of Agilent Technologies. This analysis would have been difficult if the data was unlabeled.
-
-# Updated Notebook
-## Group5_Project.ipynb
-## updated dataset : https://drive.google.com/file/d/1-TtN2fRqFhXLtuS_gCFe7rqkl5jgMFF-/view?usp=sharing
