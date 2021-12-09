@@ -25,6 +25,9 @@ We deemed it would be of great use to individuals and businesses to know how var
 
 # EDA
 Our main purpose is to highlight the impact of rising COVID-19 cases and the introduction and progress of vaccinations on the stock prices of the companies within these sectors. One example (healthcare sector) is shown below.
+![conf_deaths_w_time_graph](https://user-images.githubusercontent.com/91848959/145346565-1d245563-14b5-46f8-bbfd-3ad120fbd222.png)
+![vaccination_graph](https://user-images.githubusercontent.com/91848959/145346582-d27bcda3-ce52-48f9-a873-bd072646a846.png)
+![health_graphs](https://user-images.githubusercontent.com/91848959/145346603-2664f1ab-6cdf-4857-9d92-4ddfc7a75aa0.png)
 
 # Data Preparation
 We performed data cleaning by dropping duplicate values, dropping rows with null values, dropping unnecessary/irrelevant columns, changing the column datatypes, changing date formats. This was done using a combination of DataRobot Paxata and Python. We then merged the covid dataset with the 5 companies of the sector under consideration, on the date column. This step was repeated for all three sectors.
